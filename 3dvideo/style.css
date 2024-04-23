@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Kyiv";
+  src: url("/fonts/KyivTypeSans-VarGX.woff2") format("woff2-variations");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kyiv";
+  font-size: 24px;
+  font-variation-settings: "wght" 300, "CONT" 0, "MIDL" -1000;
+}
+
+.variable-font {
+  font-family: "Kyiv";
+  font-size: 48px;
+  line-height: 1.5;
+  font-variation-settings: "wght" 0, "CONT" 0, "MIDL" -1000;
+  transition: font-size 500ms, font-variation-settings 500ms;
+}
+
+.variable-font:hover {
+  font-size: 56px;
+  font-variation-settings: "wght" 1000, "CONT" 1000, "MIDL" 0;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.hero video {
+  width: 100%;
+  top: -10%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero h2,
+h3 {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h3 {
+  margin: 3rem 0rem;
+}
